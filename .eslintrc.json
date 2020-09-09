@@ -5,7 +5,8 @@
     "semi": [2, "never"],
     "indent": [2, "tab"],
     "no-tabs": 0,
-    "import/named": 0
+    "import/named": 0,
+    "no-console": 0
   },
   "env": {
     "es6": true,

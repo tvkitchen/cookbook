@@ -1,4 +1,3 @@
-import assert from 'assert'
 import path from 'path'
 import fs from 'fs'
 import { execSync } from 'child_process'
@@ -22,7 +21,7 @@ const recipePath = path.join(
 	'src/index.js',
 )
 
-if(!fs.existsSync(recipePath)) {
+if (!fs.existsSync(recipePath)) {
 	console.log(
 		'\x1b[35mERROR:\x1b[0m',
 		`'${recipePath}' does not exist.`,
