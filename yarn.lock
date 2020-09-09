@@ -912,7 +912,7 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@jest/console@^25.5.0":
+"@jest/console@^25.1.0", "@jest/console@^25.5.0":
   version "25.5.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-25.5.0.tgz#770800799d510f37329c508a9edd0b7b447d9abb"
   integrity sha512-T48kZa6MK1Y6k4b89sexwmSF4YLeZS/Udqg3Jj3jG/cHH+N/sLFCEoXEDMOKugJQ9FxPN1osxIknvKkxt6MKyw==
@@ -1087,17 +1087,93 @@
   dependencies:
     type-detect "4.0.8"
 
-"@tvkitchen/appliance-ccextractor@link:recipes/extracting-captions/ 0.1.0":
-  version "0.0.0"
-  uid ""
+"@tvkitchen/appliance-ccextractor@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-ccextractor/-/appliance-ccextractor-0.1.0.tgz#99bee1f45ee8915867b0123e43eda546ce5cbd57"
+  integrity sha512-kTvUh17eMvMhp4O6j4mnhaPH0MKDROXGIG3ypdUeVWIWublmHmNAB6a1OMBLhQ7bHCbtqetaKggTuXywj9wY+A==
+  dependencies:
+    "@tvkitchen/appliance-core" "0.3.0"
+    "@tvkitchen/base-classes" "^1.3.0"
+    "@tvkitchen/base-constants" "^1.0.1"
+    command-exists "^1.2.9"
 
-"@tvkitchen/appliance-video-file-ingestion@link:recipes/extracting-captions/ 0.1.0":
-  version "0.0.0"
-  uid ""
+"@tvkitchen/appliance-core@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-core/-/appliance-core-0.2.0.tgz#fbc280305bc5df46078b725e5d0d698fa8ec96a6"
+  integrity sha512-LY2F1ge1eg/lq5mYgdj6D9Rn6mRved0hFEz/gnwX3RnHVP0D0nl5uY9gJPmYjgCtcDUsakTDb6C0JUBBH95crQ==
+  dependencies:
+    "@tvkitchen/base-classes" "^1.3.0"
+    "@tvkitchen/base-constants" "^1.2.0"
+    "@tvkitchen/base-errors" "^1.0.1"
+    "@tvkitchen/base-interfaces" "4.0.0-alpha.2"
+    command-exists "^1.2.9"
+    ts-demuxer "^1.0.0"
 
-"@tvkitchen/countertop@link:recipes/extracting-captions/ 0.1.0":
-  version "0.0.0"
-  uid ""
+"@tvkitchen/appliance-core@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-core/-/appliance-core-0.3.0.tgz#eab8e9b882dc9d46e56b586427b0ccce14f8d38d"
+  integrity sha512-s6muzgQNGzCVVZJEKP4mQVVgKu1RmbAwbRw4u6zutE5uRodrK18xTaJRP5JXJ8jYW6JmBRMrGUfhBAPw0xdpCA==
+  dependencies:
+    "@tvkitchen/base-classes" "^1.3.0"
+    "@tvkitchen/base-constants" "^1.2.0"
+    "@tvkitchen/base-errors" "^1.0.1"
+    "@tvkitchen/base-interfaces" "4.0.0-alpha.2"
+    command-exists "^1.2.9"
+    ts-demuxer "^1.0.0"
+
+"@tvkitchen/appliance-video-file-ingestion@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-video-file-ingestion/-/appliance-video-file-ingestion-0.1.0.tgz#bec9a4cdf1a3855f4671a36f3d786194fa3f0e1b"
+  integrity sha512-5ingFR/emQHgBBZx4JWyRM+Zt3zg/tubCHpA53rIzrXSqC16ETqR+Y/R6sr+qTQspwn5ZZlamj+01Yj1/MzdLw==
+  dependencies:
+    "@tvkitchen/appliance-core" "0.2.0"
+
+"@tvkitchen/base-classes@1.4.0-alpha.1":
+  version "1.4.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/base-classes/-/base-classes-1.4.0-alpha.1.tgz#af55076cb06e24907707e3c5f59133b098f830a8"
+  integrity sha512-Ge0+3lEpKpBP8fXCgP4Prhie/JKj/xa/MYzOQSjF8tQNAzIUtj7dhrHjt5UWniJAk4f0iDqpPS7xNGCPSjNrTw==
+  dependencies:
+    avsc "^5.4.21"
+
+"@tvkitchen/base-classes@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/base-classes/-/base-classes-1.3.0.tgz#0cf56fcd3deed95097a5b9fe6aed3794f15dce53"
+  integrity sha512-cpeOeK9EQ84ty8heXn4lhJn2uLHGGQj0jsBbm2CPv0APSi2WmH6Mzpv7iUvsEzksqbltJ5plyG6YCdfKz/RaoA==
+
+"@tvkitchen/base-constants@^1.0.1", "@tvkitchen/base-constants@^1.1.1", "@tvkitchen/base-constants@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/base-constants/-/base-constants-1.2.0.tgz#020246bd1ff700e67066eea2e708dc5254cbcb9d"
+  integrity sha512-9oyAYcMwWH1NiM9kFJ6yxameRBb58gq3/NCPBcXxVRe8IdHnQ3XKVC0fw0J3pfeOgOHayEeVTtEcSx4FlhilOw==
+
+"@tvkitchen/base-errors@^1.0.0", "@tvkitchen/base-errors@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/base-errors/-/base-errors-1.0.1.tgz#1117e17c8a0888989ad155d1318d03b6a6ab942f"
+  integrity sha512-AHb+LYbughr1dggUFiAA7y079ZRrjgLiW2KOJgeHbQXSr1kcaxcAnISUV8e1EYuUODhmN1FD8ka9T0d9+RLzKQ==
+
+"@tvkitchen/base-interfaces@4.0.0-alpha.2":
+  version "4.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/base-interfaces/-/base-interfaces-4.0.0-alpha.2.tgz#9eee6837a0a8b33828186bef7564bb1084816e0e"
+  integrity sha512-B+clkl+hHVQNJ5nLgQWC+0Q22g/X0/UqWLRFLDE5sBBx1QzyxJm6Dp3miBvgcU9lJS/aqpsljEuNDY2hHTrzKw==
+  dependencies:
+    "@tvkitchen/base-constants" "^1.1.1"
+    "@tvkitchen/base-errors" "^1.0.0"
+
+"@tvkitchen/countertop@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/countertop/-/countertop-0.1.0.tgz#09d6c591896d62066e51491d39a544302f0b188a"
+  integrity sha512-+H/9W8qEEvo2hztgbyEnNBez86PGBJfV7Bmzct4e2m3MbFbJ3wFnJL8ma5thU97KKDtc+SInYtO3oIeUIuh8fg==
+  dependencies:
+    "@jest/console" "^25.1.0"
+    "@tvkitchen/base-classes" "1.4.0-alpha.1"
+    "@tvkitchen/base-constants" "^1.2.0"
+    "@tvkitchen/base-errors" "^1.0.0"
+    "@tvkitchen/base-interfaces" "4.0.0-alpha.2"
+    dotenv "^8.2.0"
+    jest "^25.1.0"
+    kafkajs "^1.12.0"
+    nock "^12.0.2"
+    node-fetch "^2.6.0"
+    uuid "^8.3.0"
 
 "@types/babel__core@^7.1.7":
   version "7.1.9"
@@ -1377,6 +1453,11 @@ atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+
+avsc@^5.4.21:
+  version "5.4.22"
+  resolved "https://registry.yarnpkg.com/avsc/-/avsc-5.4.22.tgz#5d415338114d60771288eb68df85a06858a49212"
+  integrity sha512-3PuueubBH33oLLhnnwmjZh/+kvcpyyuOlsmvUaNAgvsk/cAZe0Zs8OgYmL7z6sXWyEfV2PjyyxwCeoiJIwYpEg==
 
 aws-sign2@~0.7.0:
   version "0.7.0"
@@ -1744,6 +1825,11 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
+command-exists@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
+  integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
+
 commander@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
@@ -1956,6 +2042,11 @@ domexception@^1.0.1:
   integrity sha512-raigMkn7CJNNo6Ihro1fzG7wr3fHuYVytzquZKX5n0yizGsTcYgzdIUwj1X9pK0VvjeihV+XiclP+DjwbsSKug==
   dependencies:
     webidl-conversions "^4.0.2"
+
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -3366,7 +3457,7 @@ jest-worker@^25.5.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@^25.4.0:
+jest@^25.1.0, jest@^25.4.0:
   version "25.5.4"
   resolved "https://registry.yarnpkg.com/jest/-/jest-25.5.4.tgz#f21107b6489cfe32b076ce2adcadee3587acb9db"
   integrity sha512-hHFJROBTqZahnO+X+PMtT6G2/ztqAZJveGqz//FnWWHurizkD05PQGzRZOhF3XP6z7SJmL+5tCfW8qV06JypwQ==
@@ -3455,7 +3546,7 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
 
-json-stringify-safe@~5.0.1:
+json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
@@ -3483,6 +3574,13 @@ jsprim@^1.2.2:
     extsprintf "1.3.0"
     json-schema "0.2.3"
     verror "1.10.0"
+
+kafkajs@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/kafkajs/-/kafkajs-1.12.0.tgz#50ad336baee95f3324af8ae8df6fadc96e07c613"
+  integrity sha512-Izkd9iFRgeeKaHEgVpGQH08ygzCbHSxTbnu8W3G3uiNaVjGibUTmTwjv1Qf2M8NORXcPfzwVyg6bBlVj4SKr9g==
+  dependencies:
+    long "^4.0.0"
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
@@ -3576,7 +3674,7 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@^4.17.14, lodash@^4.17.19:
+lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.19:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -3587,6 +3685,11 @@ lolex@^5.0.0:
   integrity sha512-h4hmjAvHTmd+25JSwrtTIuwbKdwg5NzZVRMLn9saij4SZaepCrTCxPr35H/3bjwfMJtN+t3CX8672UIkglz28A==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+long@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
+  integrity sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==
 
 loose-envify@^1.0.0:
   version "1.4.0"
@@ -3752,6 +3855,16 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
+nock@^12.0.2:
+  version "12.0.3"
+  resolved "https://registry.yarnpkg.com/nock/-/nock-12.0.3.tgz#83f25076dbc4c9aa82b5cdf54c9604c7a778d1c9"
+  integrity sha512-QNb/j8kbFnKCiyqi9C5DD0jH/FubFGj5rt9NQFONXwQm3IPB0CULECg/eS3AU1KgZb/6SwUa4/DTRKhVxkGABw==
+  dependencies:
+    debug "^4.1.0"
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.13"
+    propagate "^2.0.0"
+
 node-environment-flags@^1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/node-environment-flags/-/node-environment-flags-1.0.6.tgz#a30ac13621f6f7d674260a54dede048c3982c088"
@@ -3759,6 +3872,11 @@ node-environment-flags@^1.0.5:
   dependencies:
     object.getownpropertydescriptors "^2.0.3"
     semver "^5.7.0"
+
+node-fetch@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-int64@^0.4.0:
   version "0.4.0"
@@ -4164,6 +4282,11 @@ prompts@^2.0.1:
   dependencies:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
+
+propagate@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/propagate/-/propagate-2.0.1.tgz#40cdedab18085c792334e64f0ac17256d38f9a45"
+  integrity sha512-vGrhOavPSTz4QVNuBNdcNXePNdNMaO1xj9yBeH1ScQPjk/rhg9sSlCXPhMkFuaNNW/syTvYqsnbIJxMBfRbbag==
 
 psl@^1.1.28:
   version "1.8.0"
@@ -4964,6 +5087,11 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
+ts-demuxer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ts-demuxer/-/ts-demuxer-1.0.0.tgz#b0b873e7951a5a272e671acb82f622256d9eb891"
+  integrity sha512-76K1Tyb82CbawAUJ6Qz76TykS3SdgEWpJtE3GkUdBvOgdc/mkxns/1dDsViUNpmWZkBDWGBtnJl4EsYULc7Ruw==
+
 tsconfig-paths@^3.9.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.9.0.tgz#098547a6c4448807e8fcb8eae081064ee9a3c90b"
@@ -5097,6 +5225,11 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+uuid@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.0.tgz#ab738085ca22dc9a8c92725e459b1d507df5d6ea"
+  integrity sha512-fX6Z5o4m6XsXBdli9g7DtWgAx+osMsRRZFKma1mIUsLCz6vRvv+pz5VNbyu9UEDzpMWulZfvpgb/cmDXVulYFQ==
 
 v8-compile-cache@^2.0.3:
   version "2.1.1"
