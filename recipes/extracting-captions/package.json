@@ -26,7 +26,7 @@
   "homepage": "https://tv.kitchen",
   "dependencies": {
     "@tvkitchen/appliance-ccextractor": "0.1.0",
-    "@tvkitchen/appliance-video-file-ingestion": "0.1.0",
+    "@tvkitchen/appliance-video-file-ingestion": "0.1.1",
     "@tvkitchen/base-constants": "^1.2.0",
     "@tvkitchen/countertop": "0.1.0"
   },

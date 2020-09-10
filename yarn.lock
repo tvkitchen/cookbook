@@ -1097,18 +1097,6 @@
     "@tvkitchen/base-constants" "^1.0.1"
     command-exists "^1.2.9"
 
-"@tvkitchen/appliance-core@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-core/-/appliance-core-0.2.0.tgz#fbc280305bc5df46078b725e5d0d698fa8ec96a6"
-  integrity sha512-LY2F1ge1eg/lq5mYgdj6D9Rn6mRved0hFEz/gnwX3RnHVP0D0nl5uY9gJPmYjgCtcDUsakTDb6C0JUBBH95crQ==
-  dependencies:
-    "@tvkitchen/base-classes" "^1.3.0"
-    "@tvkitchen/base-constants" "^1.2.0"
-    "@tvkitchen/base-errors" "^1.0.1"
-    "@tvkitchen/base-interfaces" "4.0.0-alpha.2"
-    command-exists "^1.2.9"
-    ts-demuxer "^1.0.0"
-
 "@tvkitchen/appliance-core@0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-core/-/appliance-core-0.3.0.tgz#eab8e9b882dc9d46e56b586427b0ccce14f8d38d"
@@ -1121,12 +1109,24 @@
     command-exists "^1.2.9"
     ts-demuxer "^1.0.0"
 
-"@tvkitchen/appliance-video-file-ingestion@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-video-file-ingestion/-/appliance-video-file-ingestion-0.1.0.tgz#bec9a4cdf1a3855f4671a36f3d786194fa3f0e1b"
-  integrity sha512-5ingFR/emQHgBBZx4JWyRM+Zt3zg/tubCHpA53rIzrXSqC16ETqR+Y/R6sr+qTQspwn5ZZlamj+01Yj1/MzdLw==
+"@tvkitchen/appliance-core@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-core/-/appliance-core-0.3.1.tgz#eaafb58091bc0ad8dfda0424722a686c0fc3427d"
+  integrity sha512-y7lF2/YZdTOD845HAfEdfoRNS7/1rq3z+Z6eegctYgeVoX9SckpsQ5wBVTh/sY6zBfqSZj/mJyL7ajJygtGxfg==
   dependencies:
-    "@tvkitchen/appliance-core" "0.2.0"
+    "@tvkitchen/base-classes" "^1.3.0"
+    "@tvkitchen/base-constants" "^1.2.0"
+    "@tvkitchen/base-errors" "^1.0.1"
+    "@tvkitchen/base-interfaces" "4.0.0-alpha.2"
+    command-exists "^1.2.9"
+    ts-demuxer "^1.0.0"
+
+"@tvkitchen/appliance-video-file-ingestion@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-video-file-ingestion/-/appliance-video-file-ingestion-0.1.1.tgz#f4e98dd922a2bd1b74f864639528d2c2fa8c04ba"
+  integrity sha512-zGZUt8laQNZAeNoiK9IiVmxn5/fPs8UG6Vr22LIDlbpju7hSNiuJ3zF4M0185pt9ecOPB+lFVgLJRKDxP0XYwg==
+  dependencies:
+    "@tvkitchen/appliance-core" "0.3.1"
 
 "@tvkitchen/base-classes@1.4.0-alpha.1":
   version "1.4.0-alpha.1"
