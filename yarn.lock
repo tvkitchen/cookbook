@@ -1116,6 +1116,14 @@
   dependencies:
     "@tvkitchen/appliance-core" "0.4.0"
 
+"@tvkitchen/appliance-video-http-ingestion@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@tvkitchen/appliance-video-http-ingestion/-/appliance-video-http-ingestion-0.1.1.tgz#6012157c320bcb89e5aba4461000d723c008a49e"
+  integrity sha512-qVaaQWuc8SoKoxBY+hsnJfhRd0XHMXLedSKoR3TnMwmjADG3bROFxiKBYz3xQJ7B827dzjdVjlay3L+mmz10Ag==
+  dependencies:
+    "@tvkitchen/appliance-core" "0.3.1"
+    node-fetch "^2.6.0"
+
 "@tvkitchen/base-classes@1.4.0-alpha.1":
   version "1.4.0-alpha.1"
   resolved "https://registry.yarnpkg.com/@tvkitchen/base-classes/-/base-classes-1.4.0-alpha.1.tgz#af55076cb06e24907707e3c5f59133b098f830a8"
