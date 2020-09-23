@@ -4,31 +4,23 @@ import {
 	dataTypes,
 } from '@tvkitchen/base-constants'
 import { Countertop } from '@tvkitchen/countertop'
-import VideoFileIngestionAppliance from '@tvkitchen/appliance-video-file-ingestion'
-import CcExtractorAppliance from '@tvkitchen/appliance-ccextractor'
+import { VideoFileIngestionAppliance } from '@tvkitchen/appliance-video-file-ingestion'
+import { CCExtractorAppliance } from '@tvkitchen/appliance-ccextractor'
 
-// Create the Countertop
-const countertop = new Countertop({
-	kafkaSettings: {
-		brokers: ['127.0.0.1:9092'],
-	},
-})
+const countertop = new Countertop()
 
-// Add the Appliances
 countertop.addAppliance(VideoFileIngestionAppliance, {
 	filePath: path.join(__dirname, '../data/sample.ts'),
 })
-countertop.addAppliance(CcExtractorAppliance)
+countertop.addAppliance(CCExtractorAppliance)
 
-// Register a Payload event handler
 countertop.on(
 	applianceEvents.PAYLOAD,
 	(payload) => {
 		if (payload.type === dataTypes.TEXT.ATOM) {
-			console.log(payload)
+			process.stdout.write(payload.data)
 		}
 	},
 )
 
-// Start processing
 countertop.start()
