@@ -2,7 +2,7 @@ import path from 'path'
 import fs from 'fs'
 import { execSync } from 'child_process'
 
-if (process.argv.length !== 3) {
+if (process.argv.length < 3) {
 	console.log(
 		'\x1b[35mERROR:\x1b[0m',
 		'You must pass a recipe name.',
@@ -29,7 +29,9 @@ if (!fs.existsSync(recipePath)) {
 	process.exit()
 }
 
+const scriptParameters = process.argv.slice(3)
+
 execSync(
-	`yarn babel-node ${recipePath}`,
+	`yarn babel-node ${recipePath} ${scriptParameters.join(' ')}`,
 	{ stdio: 'inherit' },
 )
