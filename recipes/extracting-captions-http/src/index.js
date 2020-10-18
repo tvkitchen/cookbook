@@ -1,7 +1,4 @@
-import {
-	applianceEvents,
-	dataTypes,
-} from '@tvkitchen/base-constants'
+import { dataTypes } from '@tvkitchen/base-constants'
 import { Countertop } from '@tvkitchen/countertop'
 import { VideoHttpIngestionAppliance } from '@tvkitchen/appliance-video-http-ingestion'
 import { CCExtractorAppliance } from '@tvkitchen/appliance-ccextractor'
@@ -33,13 +30,11 @@ countertop.addAppliance(VideoHttpIngestionAppliance, {
 })
 countertop.addAppliance(CCExtractorAppliance)
 
-countertop.on(
-	applianceEvents.PAYLOAD,
+countertop.on('data',
 	(payload) => {
 		if (payload.type === dataTypes.TEXT.ATOM) {
 			process.stdout.write(payload.data)
 		}
-	},
-)
+	})
 
 countertop.start()

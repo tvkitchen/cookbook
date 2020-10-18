@@ -25,10 +25,10 @@
   },
   "homepage": "https://tv.kitchen",
   "dependencies": {
-    "@tvkitchen/appliance-ccextractor": "0.2.0",
-    "@tvkitchen/appliance-video-http-ingestion": "0.2.0",
+    "@tvkitchen/appliance-ccextractor": "0.3.0",
+    "@tvkitchen/appliance-video-http-ingestion": "0.3.0",
     "@tvkitchen/base-constants": "^1.2.0",
-    "@tvkitchen/countertop": "0.1.1"
+    "@tvkitchen/countertop": "0.2.0"
   },
   "engines": {
     "node": ">=13.10"
