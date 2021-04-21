@@ -32,6 +32,6 @@ if (!fs.existsSync(recipePath)) {
 const scriptParameters = process.argv.slice(3)
 
 execSync(
-	`yarn babel-node ${recipePath} ${scriptParameters.join(' ')}`,
+	`docker compose up --no-recreate ${recipe} ${scriptParameters.join(' ')}`,
 	{ stdio: 'inherit' },
 )
