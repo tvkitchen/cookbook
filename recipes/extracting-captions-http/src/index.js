@@ -1,7 +1,7 @@
 import { dataTypes } from '@tvkitchen/base-constants'
 import { Countertop } from '@tvkitchen/countertop'
 import { VideoHttpIngestionAppliance } from '@tvkitchen/appliance-video-http-ingestion'
-import { CCExtractorAppliance } from '@tvkitchen/appliance-ccextractor'
+import { VideoCaptionExtractorAppliance } from '@tvkitchen/appliance-video-caption-extractor'
 
 const URL_FLAG = '-u'
 
@@ -28,7 +28,7 @@ if (streamUrl === '') {
 countertop.addAppliance(VideoHttpIngestionAppliance, {
 	url: streamUrl,
 })
-countertop.addAppliance(CCExtractorAppliance)
+countertop.addAppliance(VideoCaptionExtractorAppliance)
 
 countertop.on('data',
 	(payload) => {
