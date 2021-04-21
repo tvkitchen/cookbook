@@ -25,8 +25,8 @@
   },
   "homepage": "https://tv.kitchen",
   "dependencies": {
-    "@tvkitchen/appliance-ccextractor": "0.3.0",
-    "@tvkitchen/appliance-video-file-ingestion": "0.3.0",
+    "@tvkitchen/appliance-video-caption-extractor": "0.4.0",
+    "@tvkitchen/appliance-video-file-ingestion": "0.3.1",
     "@tvkitchen/base-constants": "^1.2.0",
     "@tvkitchen/countertop": "0.2.0"
   },
