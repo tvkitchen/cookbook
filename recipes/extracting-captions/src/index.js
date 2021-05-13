@@ -4,7 +4,11 @@ import { Countertop } from '@tvkitchen/countertop'
 import { VideoFileIngestionAppliance } from '@tvkitchen/appliance-video-file-ingestion'
 import { VideoCaptionExtractorAppliance } from '@tvkitchen/appliance-video-caption-extractor'
 
-const countertop = new Countertop()
+const countertop = new Countertop({
+	kafkaSettings: {
+		brokers: ['kafka:9093'],
+	},
+})
 
 countertop.addAppliance(VideoFileIngestionAppliance, {
 	filePath: path.join(__dirname, '../data/sample.ts'),
