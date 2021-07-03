@@ -1,0 +1,37 @@
+{
+  "name": "@tvkitchen/example-generating-srt-http",
+  "version": "0.1.0",
+  "description": "A TV Kitchen instance that generates srt files from a video url.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint 'src/**/*.js' 'lib/**/*.js'",
+    "start": "yarn babel-node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tvkitchen/examples.git",
+    "directory": "extracting-captions"
+  },
+  "keywords": [
+    "tv",
+    "television",
+    "captions"
+  ],
+  "author": "Bad Idea Factory <biffuddotcom@biffud.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/tvkitchen/examples/issues"
+  },
+  "homepage": "https://tv.kitchen",
+  "dependencies": {
+    "@tvkitchen/appliance-caption-srt-generator": "link:0.1.0",
+    "@tvkitchen/appliance-ccextractor": "link:0.3.0",
+    "@tvkitchen/appliance-video-file-ingestion": "0.3.0",
+    "@tvkitchen/base-constants": "^1.2.0",
+    "@tvkitchen/countertop": "0.2.0"
+  },
+  "engines": {
+    "node": ">=13.10"
+  }
+}
