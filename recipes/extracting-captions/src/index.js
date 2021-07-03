@@ -1,7 +1,7 @@
 import path from 'path'
 import { dataTypes } from '@tvkitchen/base-constants'
 import { Countertop } from '@tvkitchen/countertop'
-import { VideoFileIngestionAppliance } from '@tvkitchen/appliance-video-file-ingestion'
+import { VideoFileReceiverAppliance } from '@tvkitchen/appliance-video-file-receiver'
 import { VideoCaptionExtractorAppliance } from '@tvkitchen/appliance-video-caption-extractor'
 
 const countertop = new Countertop({
@@ -10,7 +10,7 @@ const countertop = new Countertop({
 	},
 })
 
-countertop.addAppliance(VideoFileIngestionAppliance, {
+countertop.addAppliance(VideoFileReceiverAppliance, {
 	filePath: path.join(__dirname, '../data/sample.ts'),
 })
 countertop.addAppliance(VideoCaptionExtractorAppliance)
